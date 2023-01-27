@@ -62,7 +62,7 @@ if (BOCResponse.status_code == 200):
         print('could not open expenses.xlsx:' + str(e))
         sys.exit()
 
-    #print(expenses)
+    print(expenses)
 
     # join tables
     expenses = petl.outerjoin(exchangeRates,expenses,key='date')
